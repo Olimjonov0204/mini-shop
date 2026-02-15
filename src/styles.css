@@ -1,0 +1,87 @@
+:root {
+  font-family: system-ui, Arial;
+}
+body {
+  margin: 0;
+  background: #f6f7fb;
+  color: #111;
+}
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
+.pcard {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 12px;
+}
+button,
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  background: #111;
+  color: #fff;
+}
+button.secondary {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ddd;
+}
+button.danger {
+  background: #ff3b60;
+}
+.price {
+  font-weight: 900;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 12px 0;
+}
+.small {
+  opacity: 0.7;
+  font-size: 13px;
+}
